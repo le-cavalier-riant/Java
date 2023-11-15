@@ -1,5 +1,3 @@
-3,2,0,0,7 of Spades,10 of Spades,Queen of Spades,5 of Diamonds,Ace of Diamonds,Queen of Hearts,Ace of Hearts,6 of Diamonds,9 of Diamonds,Ace of Spades,3 of Diamonds,70,25,+,65,25,c,75,25,c,motdepasse
-
 playersNumber,turnCount,turnBet,playerCount,container.get(i).toStringCard(0),container.get(i).toStringCard(1),communityCards,moneyPlayer[i],betPlayer[i],statePlayer[i],password
 
 with:

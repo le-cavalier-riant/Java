@@ -13,7 +13,6 @@ class Card {
 	private final int rank;
 	private final String suit;
 	static boolean unicode = false; // turn this one "true" in order to print the unicodes symbols
-
 	static String[] suits = {"Spades", "Hearts", "Diamonds", "Clubs"};
 	// this array store the suits values, we will use it later, in other classes
 
@@ -27,26 +26,15 @@ class Card {
 	public String toString() { // returns the card as a String
 
 		String suitOrUnicode;
-
 		if (unicode) {
-
 				suitOrUnicode = switch (this.suit) {
-
 					case "Spades" -> "♠";
 					case "Hearts" -> "♥";
 					case "Diamonds" -> "♦";
 					default -> "♣";
-
 				};
-
-			} else {
-
-				suitOrUnicode = this.suit;
-
-			}
-
+			} else {suitOrUnicode = this.suit;}
 		return switch (this.rank) {
-
 			case 1 -> "Ace of " + suitOrUnicode;
 			case 11 -> "Jack of " + suitOrUnicode;
 			case 12 -> "Queen of " + suitOrUnicode;
@@ -56,10 +44,6 @@ class Card {
 
 	}
 
-	int getRank() {
-
-		return this.rank;
-
-	}
+	int getRank() {return this.rank;}
 
 }

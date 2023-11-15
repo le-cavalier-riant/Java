@@ -51,7 +51,7 @@ class War {
 
 		System.out.println("OK, you just chose the card: " + firstDeck.getCard(indexPlayer1) + ".");
 
-		wait(1); // waits 1 second
+		wait(); // waits 1 second
 
 		System.out.println(clear);
 		// we have to pass many lines so that the next player cannot see the previous card and deck
@@ -75,7 +75,7 @@ class War {
 
 		System.out.println("OK, you just chose the card: " + secondDeck.getCard(indexPlayer2) + ".");
 
-		wait(1);
+		wait();
 
 		System.out.println(clear);
 
@@ -183,7 +183,7 @@ class War {
 		int indexComputer = random.nextInt(secondDeck.getSize()); // select a random card in the deck
 		int rankComputer = secondDeck.getRank(indexComputer); // the rank of the selected card
 
-		wait(1);
+		wait();
 
 		System.out.println(clear);
 
@@ -269,11 +269,11 @@ class War {
 
 	}
 
-	static void wait(int time) { // time is in seconds
+	static void wait() { // time is in seconds
 
 		try { // we have to use try/catch to prevent an error
 
-			Thread.sleep(time * 1000); // wait for 1000 ms so 1 s
+			Thread.sleep(1000); // wait for 1000 ms so 1 s
 
 		} catch (InterruptedException e) {
 

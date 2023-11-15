@@ -17,7 +17,7 @@ class Carte { // création des cartes (objets de la classe "Carte")
 	private String[] dessin = new String[7];
 
 	static String[] familles = {"piques", "coeurs", "carreaux", "trèfles"};
-	
+
 	Carte(int force, String famille, boolean visible) {
 
 		if (force < 14 && force > 0) {
@@ -65,7 +65,7 @@ class Carte { // création des cartes (objets de la classe "Carte")
 		dessin[6] = trait;
 
 		if (this.visible) {
-			
+
 			String un = "|   " + this.icone + "   |";
 			String deux = "|  " + this.icone + " " + this.icone + "  |";
 			int ligne = 0;
@@ -190,7 +190,7 @@ class Carte { // création des cartes (objets de la classe "Carte")
 			} else if (this.force == 10) {
 
 				dessin[ligne] = "|  " + this.icone + " " + this.icone + "" + this.force + "|";
-			
+
 			} else if (this.force > 6 && this.force < 10) {
 
 				dessin[ligne] = "|  " + this.icone + " " + this.icone + " " + this.force + "|";
