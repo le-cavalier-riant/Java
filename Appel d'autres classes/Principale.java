@@ -1,10 +1,10 @@
-class Principale { // tous les objets de cette classe auront comme attributs les suivants:
+class Principale { // tous les objets de cette classe auront comme attributs les suivants :
 
 	int attribut1;
-	private int attribut2; // privé
+	private final int attribut2; // privé
 	String attribut3 = "Bonjour !";
 
-	Principale(int parametre) { // constructeur, s'éxécute pour chaque objet créé
+	Principale(int parametre) { // constructeur, s'exécute pour chaque objet créé
 
 	// necessite d'être paramétrée lors de la création d'un objet
 	// sans "void" mais sans "return" quand même
@@ -23,7 +23,7 @@ class Principale { // tous les objets de cette classe auront comme attributs les
 	void methodePublique() { // pas static = il faut créer un objet de classe "Principale"
 
 		System.out.println("Saaaaaalut le public !");
-		System.out.println("1 : " + attribut1); // moi je peux utiliser les attributs car je necessite un objet :)
+		System.out.println("1 : " + attribut1); // moi, je peux utiliser les attributs, car je necessite un objet :)
 		System.out.println("2 : " + attribut2);
 		System.out.println("3 : " + attribut3);
 
